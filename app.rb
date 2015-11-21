@@ -1,6 +1,10 @@
 require 'sinatra'
 
 get '/' do
-  erb :index
+  erb :search
+end
+
+post '/search' do
+  erb :search
 end
 
