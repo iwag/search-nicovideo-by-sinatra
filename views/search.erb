@@ -1,7 +1,21 @@
-<h1>search</h1>
 <div class="ui large aligned header">
-<form action='/search' method='post' class="">
-	<input type="text" name='username' placeholder="keyword" autofocus>
+<form action='/search' method='get' class="">
+	<input type="text" name='q' placeholder="keyword" autofocus>
 	<input class="btn primary" type='submit' value='search'>
 </form>
 </div>
+<div class="ui divider"></div>
+<% if locals[:keyword] != nil%>
+	<h3>「<%= locals[:keyword] %>」 の検索結果 </h3>
+	<div class="ui items">
+		<% locals[:hits].each do |c| %>
+			<div class="item">
+			<%= c["content_id"] %>
+			<%=  c["title"] %>
+			<%=  c["description"] %>
+			<%=  c["start_time"] %>
+			</div>
+		<% end %>
+	</div>
+
+<% end %>
