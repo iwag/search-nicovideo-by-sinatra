@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/iwag/search-nicovideo-rb.git
-  revision: 437c78336a9dd21342dc272101cdceeaefac4292
+  revision: 0a4a6c53c2468aa33b9536c90e70f2b1c9a4461a
   specs:
     search-nicovideo-rb (0.1.0)
 

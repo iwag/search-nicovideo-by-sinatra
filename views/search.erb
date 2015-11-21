@@ -11,14 +11,14 @@
 		<% locals[:hits].each do |c| %>
 			<div class="item">
 				<div class="image">
-					<img src="<%= c["thumbnail_url"] %>">
+					<img src="<%= c["thumbnailUrl"] %>">
 				</div>
 				<div class="content">
-					<a href='http://nico.ms/<%= c["content_id"]%>' >
+					<a href='http://nico.ms/<%= c["contentId"]%>' >
 						<h3><%=  c["title"] %></h3>
 					</a>
 					<div class="meta">
-						<%=  c["start_time"] %>
+						<%=  c["startTime"] %>
 					</div>
 					<div class="description">
 						<%= c["description"] %>
